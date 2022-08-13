@@ -1,0 +1,42 @@
+{
+  "name": "miniclip-games",
+  "version": "1.0.0",
+  "description": "A set of canvas based miniclip game implementations",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "bootstrap": "yarn && lerna bootstrap",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "clean:install": "lerna clean && yarn bootstrap --no-ci",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "automatic-versioning": "1.4.9",
+    "husky": "^4.3.8",
+    "lerna": "^5.0.0",
+    "turbo": "^1.2.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sliit-foss/miniclip-games.git"
+  },
+  "keywords": [
+    "Miniclip"
+  ],
+  "author": "game-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sliit-foss/miniclip-games/issues"
+  },
+  "homepage": "https://github.com/sliit-foss/miniclip-games#readme",
+  "husky": {
+    "hooks": {
+      "post-commit": "HUSKY_SKIP_HOOKS=1 turbo run post-commit"
+    }
+  },
+  "workspaces": [
+    "games/*"
+  ]
+}
