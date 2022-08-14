@@ -7,11 +7,13 @@
     "clean": {
       "cache": false
     },
+    "lint": {
+      "cache": false
+    },
     "test": {
       "cache": false
     },
     "post-commit": {
-      "inputs": ["post-commit.js"],
       "cache": false
     }
   }

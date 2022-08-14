@@ -33,6 +33,7 @@
   "homepage": "https://github.com/sliit-foss/miniclip-games#readme",
   "husky": {
     "hooks": {
+      "pre-commit": "yarn lint && git add .",
       "post-commit": "HUSKY_SKIP_HOOKS=1 turbo run post-commit"
     }
   },
